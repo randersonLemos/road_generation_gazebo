@@ -30,6 +30,12 @@ def sum_chord_length(chord_length):
     scl.append(cl + scl[-1])
   return scl
 
+def position_to_pose(pos):
+  lst = []
+  for p in pos:
+    lst.append(p + (0.0,0.0,0.0,0.0))
+  return lst
+
 def include_model(model, pose):
   return """\
     <include>

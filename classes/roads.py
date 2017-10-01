@@ -54,6 +54,19 @@ class Road(FrozenClass):
     self.yln = self.yl + np.random.normal(mean, var, self.size+1)
 
 
+  def get_road_points(self):
+    pass
+
+
+  def get_offset_road_points(self):
+    return zip( np.around(self.xl,5).tolist() + np.around(self.xr,5).tolist() \
+               ,np.around(self.yl,5).tolist() + np.around(self.yr,5).tolist()) 
+
+
+  def get_noise_offset_road_points(self):
+    pass
+
+
   def plot_offset_road(self):
     self._plot_road()
     self._plot_offset_road()
