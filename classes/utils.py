@@ -1,5 +1,21 @@
 import math
 
+EMPTY_WORLD = """\
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+  </world>
+</sdf>\
+"""
+
 def chord_length(pts):
   cl = []
   cl.append(0.0)
@@ -13,3 +29,13 @@ def sum_chord_length(chord_length):
   for cl in chord_length[1:]:
     scl.append(cl + scl[-1])
   return scl
+
+def include_model(model, pose):
+  return """\
+    <include>
+      <uri>model://{}</uri>
+      <pose>{} {} {} {} {} {}</pose>
+    </include>""".format( model
+                         ,pose[0], pose[1], pose[2]
+                         ,pose[3], pose[4], pose[5])
+
