@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>15.70351 -0.10714 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>15.27601 1.60413 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>13.63168 3.40856 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>11.89274 4.4655 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>9.26255 5.78354 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>6.88704 6.72926 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>4.08694 7.32594 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>1.43493 7.41605 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-1.58951 7.17882 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-3.83662 7.18634 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-6.74754 6.96185 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-9.45858 5.47328 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-12.10588 4.33688 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-13.36232 3.21122 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-15.15703 1.86074 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-15.10444 0.04204 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-14.76138 -1.64932 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-13.7385 -3.7107 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-11.75582 -4.39233 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-9.22422 -6.08733 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-6.87136 -6.59363 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-3.94748 -7.21648 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-1.26114 -7.60355 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>1.03326 -7.37024 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>4.27375 -7.03684 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>7.65114 -6.84885 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>9.13313 -5.99525 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>11.57086 -4.71235 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>13.75736 -3.86213 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>15.11409 -1.37715 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>15.43572 0.41767 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>14.75008 1.423 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>20.43056 -0.2309 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>19.52103 4.24064 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>17.44901 7.14915 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>13.82897 8.9364 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>11.39059 10.66048 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>8.34202 11.74564 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>4.77063 11.36442 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>1.30603 12.26493 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-1.31458 12.24404 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-4.71632 12.01119 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-8.24028 11.76328 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-11.0995 10.47281 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-13.68715 8.72222 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-17.34944 6.71056 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-19.14737 3.88612 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-20.64528 0.21355 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-18.84907 -4.01992 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-17.10826 -6.83735 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-13.93524 -9.02362 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-11.28116 -10.57409 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-8.33656 -11.34401 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-4.61262 -11.81409 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>-1.5289 -12.25805 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>1.50565 -12.30104 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>4.83013 -12.67171 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>8.19698 -11.48533 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>11.40704 -10.88487 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>14.44291 -8.90737 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>16.95298 -7.39704 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>19.2686 -4.14203 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>20.66371 0.1871 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://bush</uri>
+      <pose>19.14203 4.83841 0.0 0.0 0.0 0.0</pose>
+    </include>
+  </world>
+</sdf>
