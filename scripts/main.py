@@ -1,9 +1,11 @@
+#!/usr/bin/env python
+
 import sys
 import numpy as np
-import classes.roads as roads
-import classes.worlds as worlds
-import others.utils as utils
-import others.generates as generates
+import road_generation_gazebo.roads as roads
+import road_generation_gazebo.worlds as worlds
+import road_generation_gazebo.utils as utils
+import road_generation_gazebo.generates as generates
 
 def main( roadpts, roadclose, offsetroad, offsetnpts, offsetvar
          ,withnoise, withplot, modelname):

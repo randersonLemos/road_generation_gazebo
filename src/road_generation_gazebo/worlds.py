@@ -1,5 +1,5 @@
 import os
-import others.utils as utils
+import utils as utils
 import warnings
 from frozen import FrozenClass
 
