@@ -1,4 +1,4 @@
-import utils
+import others.utils
 import numpy as np
 from frozen import FrozenClass
 from scipy import interpolate
@@ -34,8 +34,9 @@ class Road(FrozenClass):
 
 
   def offset_road(self, offset, npts=100):
-    self.size = npts
-    t = np.arange(self.t[0], self.t[-1]+1.0/npts, 1.0/npts)
+    t = np.arange(self.t[0], self.t[-1]+self.t[-1]/npts, self.t[-1]/npts)
+    self.size = len(t) 
+
     [x,y] = self.road(t)
     [dx,dy] = self.der_road(t)
 
@@ -47,11 +48,11 @@ class Road(FrozenClass):
 
 
   def noise_offset_road(self, mean=0, var=1):
-    self.xrn = self.xr + np.random.normal(mean, var, self.size+1)
-    self.yrn = self.yr + np.random.normal(mean, var, self.size+1)
+    self.xrn = self.xr + np.random.normal(mean, var, self.size)
+    self.yrn = self.yr + np.random.normal(mean, var, self.size)
 
-    self.xln = self.xl + np.random.normal(mean, var, self.size+1)
-    self.yln = self.yl + np.random.normal(mean, var, self.size+1)
+    self.xln = self.xl + np.random.normal(mean, var, self.size)
+    self.yln = self.yl + np.random.normal(mean, var, self.size)
 
 
   def get_road_points(self):
@@ -64,7 +65,14 @@ class Road(FrozenClass):
 
 
   def get_noise_offset_road_points(self):
-    pass
+    return zip( np.around(self.xln,5).tolist() + np.around(self.xrn,5).tolist() \
+               ,np.around(self.yln,5).tolist() + np.around(self.yrn,5).tolist()) 
+
+
+  def plot_road(self):
+    self._plot_road()
+    self._plt.axis('equal')
+    self._plt.show()
 
 
   def plot_offset_road(self):

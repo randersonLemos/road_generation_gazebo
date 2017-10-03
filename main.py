@@ -1,40 +1,53 @@
+import sys
 import numpy as np
-import classes.utils as utils
 import classes.roads as roads
 import classes.worlds as worlds
+import others.utils as utils
+import others.generates as generates
 
-def generates_sine_wave(rev=5, stretch_factor=0.30, amplification_factor=1):
-  x = np.arange(0, 2*np.pi*rev+np.pi/16, np.pi/16)
-  y = amplification_factor*np.sin(stretch_factor*x)
-  return list(zip(x,y))
-
-def generates_circle(radius=10, begin_angle=0.0, end_angle=2*np.pi):
-  th = np.arange(begin_angle, end_angle+np.pi/16, np.pi/16)
-  x = radius*np.cos(th)
-  y = radius*np.sin(th)
-  return list(zip(x,y))
-
-def generates_circle_sine_wave(radius=10, begin_angle=0.0, end_angle=2*np.pi):
-  th = np.arange(begin_angle, end_angle+np.pi/16, np.pi/16)
-  r = radius + 0.1*radius*np.sin(8*th)
-  x = r*np.cos(th)
-  y = r*np.sin(th)
-  return list(zip(x,y))
-
-if __name__ == '__main__':
+def main( roadpts, roadclose, offsetroad, offsetnpts, offsetvar
+         ,withnoise, withplot, modelname):
 
   rd = roads.Road(
-                   #generates_sine_wave()
-                   generates_circle_sine_wave()
-                  ,close=1
+                   pts=roadpts
+                  ,close=1 if roadclose else 0
                  )
 
-  rd.offset_road(2.50, npts=100)
-  rd.noise_offset_road(var=0.25)
-  rd.plot_offset_road()
+  rd.offset_road(
+                  offset=offsetroad
+                 ,npts=offsetnpts
+                )
+
+  rd.noise_offset_road(var=offsetvar)
+
+  if withnoise : pposes=utils.position_to_pose(rd.get_noise_offset_road_points())
+  else : pposes=utils.position_to_pose(rd.get_offset_road_points())
+
+  if withplot:
+    #rd.plot_offset_road()
+    if withnoise : rd.plot_noise_offset_road()
+    else : rd.plot_offset_road()
 
   wds = worlds.World(
-                     poses=utils.position_to_pose(rd.get_offset_road_points())
+                      model=modelname
+                     ,poses=pposes
                     )
 
   wds.make_custom_world()
+
+
+if __name__ == '__main__':
+
+  main(
+        roadpts=generates.ellipse()
+        #roadpts=generates.circle()
+        #roadpts=generates.sine_wave()
+       ,roadclose=True
+       ,offsetroad=2.5
+       ,offsetnpts=30
+       ,offsetvar=0.25
+       ,withnoise=True
+       ,withplot=True
+       ,modelname='bush'
+       #,modelname='cylinder_custom'
+      )

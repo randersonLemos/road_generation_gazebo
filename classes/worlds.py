@@ -1,3 +1,4 @@
+import os
 import utils
 import warnings
 from frozen import FrozenClass
@@ -50,5 +51,8 @@ class World(FrozenClass):
       self._save_custom_world()  
 
   def _save_custom_world(self):
+    if not os.path.exists('worlds'):
+      os.makedirs('worlds')
+
     with open('worlds/custom.world', 'w') as file_handle:
       file_handle.write(self.custom_world)
