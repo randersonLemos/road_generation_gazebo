@@ -20,9 +20,13 @@
       </inertial>
       <visual name='visual'>
         <geometry>
-          <mesh>
+   <!--        <mesh>
             <uri>file:///home/nut/projects_collada/bush.dae</uri>
-          </mesh>
+          </mesh> -->
+           <cylinder>
+            <radius>0.2</radius>
+            <length>2.0</length>
+          </cylinder>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <cast_shadows>1</cast_shadows>
@@ -38,9 +42,15 @@
         <max_contacts>10</max_contacts>
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
-          <mesh>
+  <!--         <mesh>
             <uri>/home/nut/projects_collada/bush_bole.dae</uri>
           </mesh>
+
+   -->  
+         <cylinder>
+            <radius>0.2</radius>
+            <length>2.0</length>
+          </cylinder>  
         </geometry>
         <surface>
           <friction>

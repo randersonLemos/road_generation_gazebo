@@ -41,12 +41,12 @@ def main( roadpts, roadclose, offsetroad, offsetnpts, offsetvar
 if __name__ == '__main__':
 
   main(
-        roadpts=generates.ellipse()
-        #roadpts=generates.circle()
+        # roadpts=generates.ellipse()
+        roadpts=generates.circle(r=100.0)
         #roadpts=generates.sine_wave()
        ,roadclose=True
        ,offsetroad=2.5
-       ,offsetnpts=30
+       ,offsetnpts=100
        ,offsetvar=0.25
        ,withnoise=True
        ,withplot=True
