@@ -1,4 +1,4 @@
-import others.utils
+import others.utils as utils
 import numpy as np
 from frozen import FrozenClass
 from scipy import interpolate

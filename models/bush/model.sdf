@@ -21,7 +21,7 @@
       <visual name='visual'>
         <geometry>
           <mesh>
-            <uri>file:///home/nut/projects_collada/bush.dae</uri>
+            <uri>../collada/bush.dae</uri>
           </mesh>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -39,7 +39,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>/home/nut/projects_collada/bush_bole.dae</uri>
+            <uri>../collada/bush_bole.dae</uri>
           </mesh>
         </geometry>
         <surface>
