@@ -7,5 +7,5 @@ catkin_python_setup()
 
 catkin_package()
 
-catkin_install_python(PROGRAMS scripts/main.py
+catkin_install_python(PROGRAMS bin/main.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
