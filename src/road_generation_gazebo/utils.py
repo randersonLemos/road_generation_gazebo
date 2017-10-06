@@ -44,7 +44,7 @@ def position_to_pose(pos):
 def include_model(model, pose):
   return """\
     <include>
-      <uri>model://../models/{}</uri>
+      <uri>model://road_generation_gazebo/models/{}</uri>
       <pose>{} {} {} {} {} {}</pose>
     </include>""".format( model
                          ,pose[0], pose[1], pose[2]

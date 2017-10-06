@@ -21,7 +21,7 @@
       <visual name='visual'>
         <geometry>
           <mesh>
-            <uri>file://../../bush.dae</uri>
+            <uri>model://road_generation_gazebo/collada/bush.dae</uri>
           </mesh>
         </geometry>
         <pose frame=''>0 0 0 0 -0 0</pose>
@@ -39,7 +39,7 @@
         <pose frame=''>0 0 0 0 -0 0</pose>
         <geometry>
           <mesh>
-            <uri>file://../../bush_bole.dae</uri>
+            <uri>model://road_generation_gazebo/collada/bush_bole.dae</uri>
           </mesh>
         </geometry>
         <surface>
