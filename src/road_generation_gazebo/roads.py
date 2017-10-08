@@ -34,7 +34,7 @@ class Road(object):
 
   def offset_road(self, offset, npts=100):
     t = np.arange(self.t[0], self.t[-1]+self.t[-1]/npts, self.t[-1]/npts)
-    self.size = len(t) 
+    self.size = len(t)
 
     [x,y] = self.road(t)
     [dx,dy] = self.der_road(t)

@@ -54,7 +54,7 @@ class World(object):
 
   def _save_custom_world(self):
     rospack = rospkg.RosPack()
-    path = rospack.get_path('road_generation_gazebo') + '/world' 
+    path = rospack.get_path('road_generation_gazebo') + '/worlds' 
     if not os.path.exists(path):
       os.makedirs(path)
 

@@ -9,5 +9,5 @@ catkin_python_setup()
 
 catkin_package(DEPENDS gazebo_ros)
 
-catkin_install_python(PROGRAMS bin/main.py
+catkin_install_python(PROGRAMS bin/road_gazebo.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
