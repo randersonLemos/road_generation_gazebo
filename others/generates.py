@@ -1,15 +1,11 @@
 import numpy as np
 
 
-def ellipse(a=18.0, b=10.0, bang=0.0, eang=2.0*np.pi, dis=50):
-  th = np.arange(bang, eang+eang/dis, eang/dis)
+def ellipse(a=18.0, b=10.0, npts=10):
+  th = np.arange(0, 2*np.pi, 2*np.pi/npts)
   x = a*np.cos(th)
   y = b*np.sin(th)
   return list(zip(x,y))
-
-
-def circle(r=10.0, bang=0.0, eang=2.0*np.pi, dis=50):
-  return ellipse(r, r, bang, eang, dis)
 
 
 def sine_wave(rev=1.0, fre=0.025, amp=1.0, dis=50):
