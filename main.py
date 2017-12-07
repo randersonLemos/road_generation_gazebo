@@ -38,7 +38,7 @@ def main( road_pts, road_isclose, offset
     rd.plot_offset_road()
     if offset_var:
         rd.plot_noise_offset_road()
-  rd.plot_show()
+    rd.plot_show()
 
 
 if __name__ == '__main__':
@@ -53,4 +53,5 @@ if __name__ == '__main__':
        ,model='bush'
        #,name='cylinder_custom'
        ,fname = 'custom.world'
+  )
 
