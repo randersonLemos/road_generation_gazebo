@@ -7,12 +7,12 @@ import warnings
 class World(object):
 
 
-  def __init__(self, world_file=None, model=None, poses=None):
+  def __init__(self, world_file=None, model=None, poses=None, file_name='custom.world'):
     try: # loading word
       with open(world_file, 'r') as file_handle:
         self.world = file_handle.read()
     except:
-      self.world = utils.EMPTY_WORLD 
+      self.world = utils.EMPTY_WORLD
       warnings.warn( '.world file not specified.'
                     +' Using world defined in variable'
                     +' utils.EMPTY_WORLD...')
@@ -24,7 +24,7 @@ class World(object):
       warnings.warn( 'model not specified.'
                     +' Using the model cylinder_custom'
                     +'available at folder models')
-    
+
     if poses:
       self.poses = poses
     else:
@@ -37,6 +37,7 @@ class World(object):
                     +' Using the default:'
                     +' ' +  str(self.poses))
 
+    self.file_name = file_name
 
   def make_custom_world(self, save=True):
     stg = '</include>\n'
@@ -49,14 +50,14 @@ class World(object):
                         +to_inset \
                         +self.world[idx+len(stg)-1:]
     if save:
-      self._save_custom_world()  
+      self._save_custom_world()
 
 
   def _save_custom_world(self):
     rospack = rospkg.RosPack()
-    path = rospack.get_path('road_generation_gazebo') + '/worlds' 
+    path = rospack.get_path('road_generation_gazebo') + '/worlds'
     if not os.path.exists(path):
       os.makedirs(path)
 
-    with open(path+'/custom.world', 'w') as file_handle:
+    with open(path+'/'+self.file_name, 'w') as file_handle:
       file_handle.write(self.custom_world)

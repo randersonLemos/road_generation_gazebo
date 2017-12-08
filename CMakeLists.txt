@@ -3,11 +3,9 @@ project(road_generation_gazebo)
 
 find_package(catkin REQUIRED COMPONENTS rospy gazebo_ros)
 
-#include_directories(include ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS} ${SDFormat_INCLUDE_DIRS})
-
 catkin_python_setup()
 
-catkin_package(DEPENDS gazebo_ros)
+catkin_package(DEPENDS rospy gazebo_ros)
 
 catkin_install_python(PROGRAMS bin/road_gazebo.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

@@ -18,6 +18,9 @@ class Road(object):
   """
   def __init__(self, pts, close=1, degree=3):
     [self.x, self.y] = zip(*pts)
+    if close:
+        self.x = self.x + (self.x[0],)
+        self.y = self.y + (self.y[0],)
     self.tck, self.t = interpolate.splprep([self.x, self.y], s=0, per=close, k=degree)
     self._figure_on = False
 
@@ -33,7 +36,7 @@ class Road(object):
 
 
   def offset_road(self, offset, npts=100):
-    t = np.arange(self.t[0], self.t[-1]+self.t[-1]/npts, self.t[-1]/npts)
+    t = np.arange(self.t[0], self.t[-1], self.t[-1]/npts)
     self.size = len(t)
 
     [x,y] = self.road(t)
@@ -46,12 +49,12 @@ class Road(object):
     self.yl = y + offset*dx/np.sqrt(dx**2 + dy**2)
 
 
-  def noise_offset_road(self, mean=0, var=1):
-    self.xrn = self.xr + np.random.normal(mean, var, self.size)
-    self.yrn = self.yr + np.random.normal(mean, var, self.size)
+  def noise_offset_road(self, var=1):
+    self.xrn = self.xr + np.random.normal(0, var, self.size)
+    self.yrn = self.yr + np.random.normal(0, var, self.size)
 
-    self.xln = self.xl + np.random.normal(mean, var, self.size)
-    self.yln = self.yl + np.random.normal(mean, var, self.size)
+    self.xln = self.xl + np.random.normal(0, var, self.size)
+    self.yln = self.yl + np.random.normal(0, var, self.size)
 
 
   def get_road_points(self):
@@ -60,32 +63,31 @@ class Road(object):
 
   def get_offset_road_points(self):
     return zip( np.around(self.xl,5).tolist() + np.around(self.xr,5).tolist() \
-               ,np.around(self.yl,5).tolist() + np.around(self.yr,5).tolist()) 
+               ,np.around(self.yl,5).tolist() + np.around(self.yr,5).tolist())
 
 
   def get_noise_offset_road_points(self):
     return zip( np.around(self.xln,5).tolist() + np.around(self.xrn,5).tolist() \
-               ,np.around(self.yln,5).tolist() + np.around(self.yrn,5).tolist()) 
+               ,np.around(self.yln,5).tolist() + np.around(self.yrn,5).tolist())
+
+
+  def plot_show(self):
+    self._plt.show()
 
 
   def plot_road(self):
     self._plot_road()
     self._plt.axis('equal')
-    self._plt.show()
 
 
   def plot_offset_road(self):
-    self._plot_road()
     self._plot_offset_road()
     self._plt.axis('equal')
-    self._plt.show()
 
 
   def plot_noise_offset_road(self):
-    self._plot_road()
     self._plot_noise_offset_road()
     self._plt.axis('equal')
-    self._plt.show()
 
 
   def _load_figure_object(self):
@@ -106,12 +108,12 @@ class Road(object):
   def _plot_offset_road(self):
     if not self._figure_on:
       self._load_figure_object()
-    self._plt.plot(self.xl, self.yl, 'o')
-    self._plt.plot(self.xr, self.yr, 'o')
+    self._plt.plot(self.xl, self.yl, '*')
+    self._plt.plot(self.xr, self.yr, '*')
 
 
   def _plot_noise_offset_road(self):
     if not self._figure_on:
       self._load_figure_object()
-    self._plt.plot(self.xln, self.yln, 'o')
-    self._plt.plot(self.xrn, self.yrn, 'o')
+    self._plt.plot(self.xln, self.yln, '^')
+    self._plt.plot(self.xrn, self.yrn, '^')
