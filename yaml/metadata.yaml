@@ -1,0 +1,16 @@
+### FUNCTION MODE
+## Ellipsoidal waypoints
+#metadata : {
+#   'mode' : 'function'
+#  ,'close' : 0
+#  ,'geometry' : 'ellipse'
+#  ,'radius' : 40
+#  ,'RADIUS' : 40
+#}
+
+## WAYPOINTS MODE
+metadata : {
+   'mode' : 'waypoints'
+  ,'close' : 0
+  ,'points' : [[0,0],[10,10],[20,20],[30,30],[40,40],[50,50]]
+}
