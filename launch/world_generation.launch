@@ -1,10 +1,9 @@
 <launch>
-<node name="world_creation" pkg="road_generation_gazebo" type="road_gazebo.py" required="true" output='screen'>
-<!--node name="world_creation" pkg="road_generation_gazebo" type="road_gazebo.py"-->
+<node name="world_creation" pkg="road_generation_gazebo" type="road_gazebo.py" output='screen'>
   <rosparam command="load" file="$(find road_generation_gazebo)/yaml/metadata.yaml" />
   <param name="doplot" value="true" />
   <param name="offset_road_add_noise" value="true" />
-  <param name="offset" value="5.0" />
+  <param name="offset" value="7.0" />
   <param name="offset_npts" value="100.0" />
   <param name="offset_var" value="1.5" />
   <param name="model" value="bush" />
