@@ -1,0 +1,813 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>-4.09741 5.41122 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>-3.58544 4.93967 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>-1.57012 5.89936 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>-2.22236 8.26054 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>-1.20778 9.96443 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>0.83529 10.40956 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>1.1965 10.98484 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>2.25747 12.47969 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>2.73768 14.72358 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>5.44654 13.40297 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>4.51857 11.88586 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>4.97495 16.76245 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>7.36433 18.83049 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>7.64651 19.0385 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>10.61098 19.86451 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>10.60277 19.31362 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>12.47093 20.3319 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>10.31516 22.41254 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>11.64436 22.81473 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>16.20318 23.87154 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>14.80753 24.78624 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>15.5143 25.45431 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>17.95507 27.02418 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>18.83966 29.11744 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>19.71324 28.67827 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>19.50092 27.76275 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>21.26226 32.28066 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>20.69635 31.7246 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>21.76558 34.48196 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>24.54576 32.44838 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>23.23556 34.48505 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>26.69141 37.44157 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>27.01606 36.27213 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>27.16785 38.71531 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>29.58154 38.49545 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>31.15246 37.96001 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>31.3815 39.54211 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>32.67386 42.85763 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>32.82658 44.23581 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>35.13373 44.48479 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>33.51172 45.36393 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>36.70992 46.55599 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>37.02595 47.94366 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>38.77895 48.61987 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>40.2532 48.41902 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>39.74598 48.76921 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>41.20092 51.82562 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>40.77908 52.62157 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>41.9713 52.78216 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>43.51428 53.46749 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>46.79137 55.28807 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>46.494 57.01404 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>46.66331 56.36224 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>49.14084 58.81063 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>49.07317 57.86123 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>49.54558 58.53163 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>52.00922 61.95459 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>52.67135 62.27135 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>53.32066 62.76571 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>53.26738 62.88542 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>53.84722 64.38765 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>55.54268 65.42288 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>58.0598 67.17154 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>57.87108 69.25581 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>57.98227 68.00913 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>58.47357 70.60929 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>60.93789 71.05011 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>62.50668 69.62302 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>64.88755 74.09414 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>66.51084 73.57538 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>65.99177 75.63513 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>66.21914 77.92972 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>66.12926 78.62297 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>66.8942 76.77948 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>68.71155 79.09611 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>70.53278 77.86911 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>69.9208 79.60005 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>73.2826 81.60146 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>71.90004 81.59395 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>73.55094 82.96567 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>74.74434 86.41514 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>76.69809 86.35631 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>76.5167 85.95569 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>79.61385 89.55586 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>78.37389 88.33898 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>79.40607 90.43707 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>80.45202 89.73409 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>81.33335 93.65064 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>82.31112 92.19751 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>84.2766 93.1197 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>84.51954 95.52301 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>85.17308 97.42285 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>86.1289 97.063 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>87.07456 98.50182 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>90.53141 98.3061 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>90.87437 100.72847 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>90.16285 101.2102 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>91.58242 101.9177 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>93.48048 100.63678 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>94.62292 104.31906 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>4.62573 -6.08383 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>4.19106 -5.17513 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>8.36859 -3.50264 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>7.91141 -1.54759 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>7.93902 0.40148 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>9.78684 -0.31956 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>10.18421 1.35814 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>12.5671 1.6642 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>13.54385 1.99785 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>15.46675 3.27599 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>15.04218 4.88408 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>16.42706 5.12774 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>17.37758 9.1388 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>18.83588 8.19174 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>19.251 9.42146 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>21.26447 9.60516 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>20.17791 10.92966 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>21.92946 11.96372 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>21.8506 13.40165 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>22.90417 15.06671 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>24.40706 14.20514 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>26.3222 16.18731 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>25.55357 18.65977 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>26.29943 16.87274 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>30.18288 18.23411 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>29.55824 17.98555 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>30.55868 22.40895 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>31.35969 24.3369 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>31.53981 22.56128 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>33.78552 23.85075 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>34.87632 26.48037 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>35.96864 28.88957 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>38.96013 27.11342 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>37.98719 27.09148 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>40.04504 28.86281 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>40.0877 30.91297 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>42.95257 31.78875 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>42.32737 32.91242 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>43.44509 33.39445 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>42.80352 33.23421 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>44.50698 33.76842 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>45.21934 35.48567 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>48.5308 39.21583 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>47.2587 36.47 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>49.45103 38.00316 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>50.41269 40.87347 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>51.67196 42.41973 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>52.82079 41.97352 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>51.12893 42.50673 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>53.96903 44.30609 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>56.04833 45.63711 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>55.99008 46.08263 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>57.04467 46.00799 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>57.53239 47.92829 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>60.09201 49.19357 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>58.51796 51.35654 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>61.89121 52.86248 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>61.74646 52.14237 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>62.71483 52.23398 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>64.43115 55.66728 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>66.59165 53.12477 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>63.97 55.57413 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>67.74065 56.78546 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>65.4993 59.66804 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>69.20608 60.75905 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>71.34116 61.20044 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>71.44137 61.52576 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>71.81997 61.78165 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>73.82976 63.84557 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>74.09417 64.47367 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>76.38066 64.13254 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>76.05366 66.25726 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>77.24375 66.54555 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>77.53625 67.04613 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>78.92752 69.40263 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>82.35023 70.37316 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>82.93349 71.43148 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>81.83744 72.84041 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>82.52621 73.23461 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>84.82596 75.18089 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>84.1649 77.016 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>86.532 76.04614 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>86.79162 75.13241 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>87.26199 78.20316 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>89.18271 79.55988 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>90.00167 80.32232 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>91.39212 80.68587 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>91.45916 82.14861 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>92.44942 83.26335 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>93.28439 84.10367 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>95.23357 85.68962 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>96.71693 84.74162 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>96.98485 86.67362 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>99.2825 88.27197 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>98.66691 87.65041 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>100.53603 89.51397 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>100.52713 90.3843 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>102.32094 89.75343 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>103.534 92.6866 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://road_generation_gazebo/models/bush</uri>
+      <pose>102.49027 93.68965 0.0 0.0 0.0 0.0</pose>
+    </include>
+  </world>
+</sdf>

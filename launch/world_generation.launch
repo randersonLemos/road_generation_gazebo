@@ -5,7 +5,7 @@
   <param name="offset_road_add_noise" value="true" />
   <param name="offset" value="7.0" />
   <param name="offset_npts" value="100.0" />
-  <param name="offset_var" value="0.5" />
+  <param name="offset_var" value="1.0" />
   <param name="model" value="bush" />
   <!--param name="model" value="cylinder"/-->
   <param name="file_name" value="custom.world" />
