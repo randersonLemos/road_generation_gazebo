@@ -1,15 +1,12 @@
 import os
-import others.utils as utils
+import rospkg
+import utils
 import warnings
-from frozen import FrozenClass
 
 
+class World(object):
 
-class World(FrozenClass):
-
-  def __init__( self, world_file=None, model=None
-               ,poses=None ,fname='custom.world'):
-
+  def __init__(self, world_file=None, model=None, poses=None, file_name='custom.world'):
     try: # loading word
       with open(world_file, 'r') as file_handle:
         self.world = file_handle.read()
@@ -39,7 +36,7 @@ class World(FrozenClass):
                     +' Using the default:'
                     +' ' +  str(self.poses))
 
-    self.fname = fname
+    self.file_name = file_name
 
   def make_custom_world(self, save=True):
     stg = '</include>\n'
@@ -55,8 +52,10 @@ class World(FrozenClass):
       self._save_custom_world()
 
   def _save_custom_world(self):
-    if not os.path.exists('worlds'):
-      os.makedirs('worlds')
+    rospack = rospkg.RosPack()
+    path = rospack.get_path('road_generation_gazebo') + '/worlds'
+    if not os.path.exists(path):
+      os.makedirs(path)
 
-    with open('worlds/'+self.fname, 'w') as file_handle:
+    with open(path+'/'+self.file_name, 'w') as file_handle:
       file_handle.write(self.custom_world)

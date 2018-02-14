@@ -1,10 +1,9 @@
-import others.utils as utils
+import utils
 import numpy as np
-from frozen import FrozenClass
 from scipy import interpolate
 
 
-class Road(FrozenClass):
+class Road(object):
   """
   Computes a circuit (road) from a list of points.
 
@@ -19,6 +18,9 @@ class Road(FrozenClass):
   """
   def __init__(self, pts, close=1, degree=3):
     [self.x, self.y] = zip(*pts)
+    if close:
+        self.x = self.x + (self.x[0],)
+        self.y = self.y + (self.y[0],)
     self.tck, self.t = interpolate.splprep([self.x, self.y], s=0, per=close, k=degree)
     self._figure_load = False
 

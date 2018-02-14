@@ -1,5 +1,6 @@
 import math
 
+
 EMPTY_WORLD = """\
 <?xml version="1.0" ?>
 <sdf version="1.5">
@@ -16,12 +17,14 @@ EMPTY_WORLD = """\
 </sdf>\
 """
 
+
 def chord_length(pts):
   cl = []
   cl.append(0.0)
   for one, other in zip(pts[1:],pts[:-1]):
     cl.append(math.sqrt((one[0]-other[0])**2+(one[1]-other[1])**2))
   return cl
+
 
 def sum_chord_length(chord_length):
   scl = []
@@ -30,16 +33,18 @@ def sum_chord_length(chord_length):
     scl.append(cl + scl[-1])
   return scl
 
+
 def position_to_pose(pos):
   lst = []
   for p in pos:
     lst.append(p + (0.0,0.0,0.0,0.0))
   return lst
 
+
 def include_model(model, pose):
   return """\
     <include>
-      <uri>model://{}</uri>
+      <uri>model://road_generation_gazebo/models/{}</uri>
       <pose>{} {} {} {} {} {}</pose>
     </include>""".format( model
                          ,pose[0], pose[1], pose[2]
