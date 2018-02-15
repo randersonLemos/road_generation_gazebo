@@ -1,11 +1,12 @@
 <launch>
 <node name="world_creation" pkg="road_generation_gazebo" type="road_gazebo.py" output='screen'>
   <rosparam command="load" file="$(find road_generation_gazebo)/yaml/metadata.yaml" />
-  <param name="doplot" value="true" />
-  <param name="offset_road_add_noise" value="true" />
-  <param name="offset" value="7.0" />
-  <param name="offset_npts" value="100.0" />
-  <param name="offset_var" value="1.0" />
+  <param name="do_plot" value="true" />
+  <param name="do_clearance" value="true" />
+  <param name="corridor_wall_width" value="12.0" />
+  <param name="corridor_wall_npts" value="150.0" />
+  <param name="corridor_wall_var" value="4.0" />
+  <param name="clearance_width" value="9.0" />
   <param name="model" value="bush" />
   <!--param name="model" value="cylinder"/-->
   <param name="file_name" value="custom.world" />

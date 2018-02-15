@@ -8,9 +8,10 @@ import road_generation_gazebo.worlds as worlds
 import road_generation_gazebo.utils as utils
 import road_generation_gazebo.generates as generates
 
-def main(road_pts, road_close, offset
-        ,offset_npts, offset_var, doplot
-        ,model, file_name):
+def main( road_pts, road_close, corridor_wall_width
+         ,corridor_wall_npts, corridor_wall_var, clearance_width
+         ,do_plot, do_clearance, model, file_name
+        ):
 
     rd = roads.Road(
              pts=road_pts
@@ -18,12 +19,12 @@ def main(road_pts, road_close, offset
             )
 
     rd.offset_road(
-             offset=offset
-            ,npts=offset_npts
+             offset=float(corridor_wall_width)/2
+            ,npts=corridor_wall_npts
             )
 
     rd.noise_offset_road(
-            var=offset_var
+            var=corridor_wall_var
             )
 
     poses=utils.position_to_pose(
@@ -38,7 +39,10 @@ def main(road_pts, road_close, offset
 
     wds.make_custom_world()
 
-    if doplot:
+    if do_clearance:
+        rd.make_clearance(width=clearance_width)
+
+    if do_plot:
         rd.plot_road()
         rd.plot_offset_road()
         rd.plot_noise_offset_road()
@@ -64,15 +68,17 @@ if __name__ == '__main__':
         raise ValueError('Not expected mode...')
 
     main(
-             road_pts=road_pts
-            ,road_close=road_close
-            ,offset=rospy.get_param('~offset')
-            ,offset_npts=rospy.get_param('~offset_npts')
-            ,offset_var=rospy.get_param('~offset_var')
-            ,doplot=rospy.get_param('~doplot')
-            ,model=rospy.get_param('~model')
-            ,file_name =rospy.get_param('~file_name')
-            )
+          road_pts=road_pts
+         ,road_close=road_close
+         ,corridor_wall_width=rospy.get_param('~corridor_wall_width')
+         ,corridor_wall_npts=rospy.get_param('~corridor_wall_npts')
+         ,corridor_wall_var=rospy.get_param('~corridor_wall_var')
+         ,clearance_width=rospy.get_param('~clearance_width')
+         ,do_plot=rospy.get_param('~do_plot')
+         ,do_clearance=rospy.get_param('~do_clearance')
+         ,model=rospy.get_param('~model')
+         ,file_name =rospy.get_param('~file_name')
+        )
 
     print '.world file generated and saved at world folder as ' + rospy.get_param('~file_name') + '...'
 

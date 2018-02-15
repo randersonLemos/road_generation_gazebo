@@ -117,3 +117,30 @@ class Road(object):
       self._load_figure_object()
     self._plt.plot(self.xln, self.yln, '^')
     self._plt.plot(self.xrn, self.yrn, '^')
+
+
+  def make_clearance(self, width, npts=100):
+    t = np.arange(self.t[0], self.t[-1], self.t[-1]/npts)
+
+    [xs,ys] = self.road(t)
+
+    self.xrn, self.yrn = self._clearance(xs,ys,self.xrn,self.yrn,width)
+    self.xln, self.yln = self._clearance(xs,ys,self.xln,self.yln,width)
+
+  def _distance_between_points(self, x, y, xp, yp):
+      return np.sqrt((x-xp)**2 + (y-yp)**2)
+
+  def _clearance(self, xs, ys, xps, yps, width):
+    xxps = []
+    yyps = []
+    for xp,yp in zip(xps,yps):
+        dists = []
+        for x,y in zip(xs,ys):
+            dists.append(self._distance_between_points(x,y,xp,yp))
+
+        if min(dists) >= float(width)/2:
+            xxps.append(xp)
+            yyps.append(yp)
+
+    return (np.array(xxps), np.array(yyps))
+
