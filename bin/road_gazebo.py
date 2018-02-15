@@ -27,6 +27,9 @@ def main( road_pts, road_close, corridor_wall_width
             var=corridor_wall_var
             )
 
+    if do_clearance:
+        rd.make_clearance(width=clearance_width)
+
     poses=utils.position_to_pose(
             rd.get_noise_offset_road_points()
             )
